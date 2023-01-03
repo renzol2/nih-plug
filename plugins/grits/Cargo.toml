@@ -1,0 +1,18 @@
+[package]
+name = "grits"
+version = "0.0.1"
+edition = "2021"
+authors = ["Renzo Ledesma <renzol2@illinois.edu>"]
+license = "ISC"
+
+description = "A simple distortion and bitcrush plugin"
+
+[lib]
+# The `lib` artifact is needed for the standalone target
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+nih_plug = { path = "../../", features = ["assert_process_allocs", "standalone"] }
+nih_plug_vizia = { path = "../../nih_plug_vizia" }
+
+atomic_float = "0.1"

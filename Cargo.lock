@@ -1851,6 +1851,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "grits"
+version = "0.0.1"
+dependencies = [
+ "atomic_float",
+ "nih_plug",
+ "nih_plug_vizia",
+]
+
+[[package]]
 name = "guillotiere"
 version = "0.6.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
